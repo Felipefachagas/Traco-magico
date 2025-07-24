@@ -22,8 +22,22 @@
     <div class="centro"> <button id="btn" style="margin-top: 50px;">Criar Jogo</button></div>
 
 
-    <div class="centro">
+    <div class="center">
+        <div id="cores">
+            <button id="transicao" class="red" data-cor="red"></button>
+            <button id="transicao" class="blue" data-cor="blue"></button>
+            <button id="transicao" class="green" data-cor="green"></button>
+            <button id="transicao" class="white" data-cor="white"></button> <!--Botoes para mudar as cores-->
+            <button id="transicao" class="orange" data-cor="orange"></button>
+            <button id="transicao" class="purple" data-cor="purple"></button>
+            <button id="transicao" class="pink" data-cor="pink"></button>
+            <button id="transicao" class="black" data-cor="black"></button>
+        </div>
         <div style="margin-top: 100px;" class="container" id="grid"></div> <!--Aonde vai ficar os quadrados-->
+        <div class="texto-direita">
+            <h4>Cor Atual:</h4>
+            <div id="atual" class="coratual"></div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>

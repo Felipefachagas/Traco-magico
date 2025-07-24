@@ -11,6 +11,14 @@
     align-items: center;
 }
 
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: -200px;
+    margin-bottom: 100px;
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -28,4 +36,100 @@
 input:-webkit-autofill {
     box-shadow: 0 0 0px 1000px white inset !important;
     -webkit-text-fill-color: black !important;
+}
+
+
+#cores {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 440px;
+    margin-top: 400px;
+    margin-right: 100px;
+}
+
+#cores button {
+    width: 80px;
+    height: 50px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#cores button.red {
+    background-color: red;
+    border: 1px solid black;
+}
+
+#cores button.blue {
+    background-color: blue;
+    border: 1px solid black;
+}
+
+#cores button.green {
+    background-color: green;
+    border: 1px solid black;
+}
+
+#cores button.white {
+    background-color: white;
+    border: 1px solid black;
+}
+
+#cores button.orange {
+    background-color: orange;
+    border: 1px solid black;
+}
+
+#cores button.purple {
+    background-color: purple;
+    border: 1px solid black;
+}
+
+#cores button.pink {
+    background-color: hotpink;
+    border: 1px solid black;
+}
+
+#cores button.black {
+    background-color: black;
+    border: 1px solid gray;
+}
+
+
+#transicao {
+    transition: transform 0.2s ease;
+}
+
+#transicao:hover {
+    transform: scale(1.2);
+}
+
+.texto-direita {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 300px;
+    margin-left: 200px;
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #f0f0f0;
+    height: fit-content;
+}
+
+.texto-direita h4 {
+    margin-top: 0;
+}
+
+.coratual {
+    border: 1px solid black;
+    height: 125px;
+    width: 125px;
+    margin-bottom: 40px;
 }
