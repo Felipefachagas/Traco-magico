@@ -27,6 +27,16 @@ botao.addEventListener("click", function () {
     const largura = largura1.value;
     const altura = altura1.value;           // Pegando os valores de altura e largura por EventListener
 
+    if (altura > 100 || largura > 100) {
+        const limite = document.createElement("h1");
+        limite.textContent = "Tamanho muito grande, digite algo até 100"
+        limite.classList.add("centro");
+        limite.style.marginLeft = "200px";
+        grid.innerHTML = "";
+        grid.appendChild(limite);
+        return;
+    }
+
     const width = larguraGrid / largura;
     const height = alturaGrid / altura;
 
